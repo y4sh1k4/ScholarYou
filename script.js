@@ -4,15 +4,17 @@ const login=document.querySelector('.login_');
 const button=document.querySelector('.botn');
 const close=document.querySelector('.icon-close');
 
-register.onclick=function(){
+register.onclick=function(event){
+    event.preventDefault();
     wrapper.classList.add('active');
 };
-login.onclick=function(){
+login.onclick=function(event){
+    event.preventDefault();
     wrapper.classList.remove('active');
 };
 button.onclick=function(){
     wrapper.classList.add('button-active');
 };
-// close.onclick=function(){
-//     wrapper.classList.remove('button-active');
-// };
+close.onclick=function(){
+    wrapper.classList.remove('button-active');
+};
