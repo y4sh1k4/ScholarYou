@@ -9,6 +9,15 @@
     padding: 1vw 2vw;
     background-color:transparent;
 }
+.header h1{
+    font-size: 2vw;
+    font-weight: 100;
+    color: white;
+    text-decoration-line: underline;
+}
+.header h1 span{
+    font-weight: 700;
+}
 .flex{
     display: flex;
     align-items: center;
@@ -26,16 +35,24 @@
 .nav a{
     font-size: 1.5vw;
     color: white;
+    font-weight: 500;
     text-decoration: none;
     margin-right: 2vw;
 }
 .nav .botn{
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1.5vw;
+    
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 0.5vw 1vw;
+    font-size: 1.3vw;
     color: white;
-    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.nav .botn:hover {
+    background-color: #FD4C93;
 }
 .section{
     min-height: 100vh;
@@ -43,6 +60,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
 }
 .wrapper{
     position: absolute;
@@ -55,7 +73,7 @@
     z-index: 100;
     box-shadow: 1vw rgba(0,0,0,.2);
     border-left: 0.1vw solid rgb(255,255,255,.2);
-    padding: 0 1.2vw;
+    padding: 0 3vw;
     opacity: 0;
     pointer-events: none;
 }
@@ -63,13 +81,13 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 2vw;
-    height: 2vw;
+    width: 1.6vw;
+    height: 1.4vw;
     background: white;
 }
 .wrapper.button-active{
     opacity: 1;
-    pointer-events: ;
+    pointer-events: auto;
 }
 .wrapper .box{
     width: 100%;
@@ -92,7 +110,8 @@
     margin-bottom: 2vw;
 }
 .title h2{
-    font-size: 2vw;
+    font-size: 3vw;
+    font-weight: 600;
 }
 .box .input{
     position: relative;
@@ -107,7 +126,7 @@
     background: transparent;
     border: none;
     outline:none;
-    font-size: 1vw;
+    font-size: 1.5vw;
     color: white;
     font-weight: 500;
     padding-right: 1vw;
@@ -123,7 +142,7 @@
 }
 .input input:focus~label,
 .input input:valid~label{
-    top: -0.5vw;
+    top: -1vw;
 }
 .input .icon{
     position: absolute;
@@ -159,3 +178,4 @@
     text-align: center;
     margin-top: 1vw;
 }
+
